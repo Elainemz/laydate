@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./src/laydate.js"></script>
+</head>
+<body>
+    <input type="text" id="date" autocomplete="off">
+</body>
+<script>
+    console.log(window.lay);
+    laydate.render({
+        elem: '#date',
+        type: 'month',
+        multiple: true,
+        value: ['2018-11', '2019-1']
+    });
+</script>
+</html>
